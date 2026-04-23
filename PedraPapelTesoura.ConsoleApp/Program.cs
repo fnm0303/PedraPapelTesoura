@@ -17,7 +17,7 @@ class Program
 
             Console.WriteLine("-------------------------");
             Console.Write("Deseja continuar? s/n ");
-            string? opcaoContinuar = Console.ReadLine().ToUpper();
+            string? opcaoContinuar = Console.ReadLine()?.ToUpper();
 
             if (opcaoContinuar != "S")
                 break;
