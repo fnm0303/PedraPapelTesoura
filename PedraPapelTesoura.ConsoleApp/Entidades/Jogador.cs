@@ -12,14 +12,18 @@ public static class Jogador
         {
             Console.Clear();
             Console.WriteLine("-------------------------");
+            Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("Pedra, Papel, Tesoura");
+            Console.ResetColor();
             Console.WriteLine("-------------------------");
             Console.WriteLine("1 - Pedra");
             Console.WriteLine("2 - Papel");
             Console.WriteLine("3 - Tesoura");
             Console.WriteLine("-------------------------");
 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Escolha uma opção válida: ");
+            Console.ResetColor();
             string? strEscolhaJogador = Console.ReadLine(); //? para permitir que a variável seja null
 
             Console.WriteLine("-------------------------");
